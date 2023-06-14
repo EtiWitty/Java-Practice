@@ -5,7 +5,7 @@ import java.util.List;
  * Singleton class representing a connection pool for managing database connections.
  * In this example, the ConnectionPool class represents a resource manager for a connection pool.
  * The getInstance() method returns the singleton instance of the ConnectionPool,
- * ensuring that all parts of the application use the same pool of connections.
+ * ensuring that all parts of the application use the same pool of connections
  */
 public class ConnectionPool {
   private static ConnectionPool instance;
