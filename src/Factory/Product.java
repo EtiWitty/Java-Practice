@@ -1,14 +1,17 @@
-// Product interface
+package Factory;
+// ============ Factory Design Pattern ============
+
+// Factory.Product interface
 public class Product {
   void doSomething() {
-    System.out.println("Product does something.");
+    System.out.println("Factory.Product does something.");
   };
 }
 
 // Concrete product class A
 public class ConcreteProductA implements Product {
   public void doSomething() {
-    System.out.println("Product A does something.");
+    System.out.println("Factory.Product A does something.");
   }
 }
 
@@ -30,14 +33,14 @@ public class ProductFactory {
   }
 }
 
-// Client code
+// Factory.Client code
 public class Client {
   public static void main(String[] args) {
     Product productA = ProductFactory.createProduct("A");
-    productA.doSomething(); // Output: Product A does something.
+    productA.doSomething(); // Output: Factory.Product A does something.
 
     Product productB = ProductFactory.createProduct("B");
-    productB.doSomething(); // Output: Product B does something.
+    productB.doSomething(); // Output: Factory.Product B does something.
   }
 }
 

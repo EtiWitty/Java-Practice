@@ -1,5 +1,7 @@
+package Singelton;
+
 public class Logger {
-  // The static variable instance holds the single instance of the Logger class.
+  // The static variable instance holds the single instance of the Singelton.Logger class.
   private static Logger instance;
 
   private Logger() {

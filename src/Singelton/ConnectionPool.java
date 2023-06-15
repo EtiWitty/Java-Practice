@@ -1,10 +1,12 @@
+package Singelton;
+
 import java.sql.Connection;
 import java.util.List;
 
 /**
  * Singleton class representing a connection pool for managing database connections.
- * In this example, the ConnectionPool class represents a resource manager for a connection pool.
- * The getInstance() method returns the singleton instance of the ConnectionPool,
+ * In this example, the Singelton.ConnectionPool class represents a resource manager for a connection pool.
+ * The getInstance() method returns the singleton instance of the Singelton.ConnectionPool,
  * ensuring that all parts of the application use the same pool of connections
  */
 public class ConnectionPool {
@@ -20,10 +22,10 @@ public class ConnectionPool {
   }
 
   /**
-   * Returns the single instance of the ConnectionPool.
+   * Returns the single instance of the Singelton.ConnectionPool.
    * If the instance does not exist, it creates a new one.
    *
-   * @return The ConnectionPool instance
+   * @return The Singelton.ConnectionPool instance
    */
   public static synchronized ConnectionPool getInstance() {
     if(instance == null) {

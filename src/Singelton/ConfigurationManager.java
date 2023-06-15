@@ -1,10 +1,12 @@
+package Singelton;
+
 import java.util.Properties;
 
 
 /**
- * the ConfigurationManager class represents a singleton that manages configuration settings
+ * the Singelton.ConfigurationManager class represents a singleton that manages configuration settings
  * using a Properties object. The getInstance() method ensures that only one instance
- * of ConfigurationManager exists, allowing centralized access to the configuration settings.
+ * of Singelton.ConfigurationManager exists, allowing centralized access to the configuration settings.
  */
 public class ConfigurationManager {
   private static ConfigurationManager instance;
